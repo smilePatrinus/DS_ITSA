@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    int X,Y;
+    while( scanf("%d%d",&X,&Y)!=EOF){
+        if(X>100||Y>100){
+            printf("outside\n");
+        }
+        else printf("inside\n");
+    }
+}
