@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(int argc, char *argv[]) {
+    double up, down;
+
+    // 使用 %f 與變數型別對應
+    while (scanf("%lf", &up) != EOF) {
+        up*=1.6;
+        printf("%.1f\n", round(up * 10) / 10);
+    }
+
+    return 0;
+}
