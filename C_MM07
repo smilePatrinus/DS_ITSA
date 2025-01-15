@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main(int argc, char *argv[]) {
+    long long int up, down;
+
+    // 使用 %f 與變數型別對應
+    while (scanf("%lld", &up) != EOF) {
+        printf("%lld %lld %lld\n",up,up*up,up*up*up);
+    }
+
+    return 0;
+}
