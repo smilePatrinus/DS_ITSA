@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+    int N , tar=0;
+    while(scanf("%d", &N) != EOF){
+        for(int i = 1; i <= N; i++){
+
+            if(i % 5 == 0 && i % 7 == 0 && tar == 0){
+                tar=1;
+                printf("%d",i);
+            }
+            else if(i % 5 == 0 && i % 7 == 0) {
+                printf(" %d",i);
+            }
+            
+        }
+        printf("\n");
+    }
+    
+}
