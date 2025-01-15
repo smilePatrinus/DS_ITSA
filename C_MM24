@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    double min,timemon;
+    double money;
+    while(scanf("%lf%lf",&min,&timemon)!=EOF){
+        if(min<=60) money=min*timemon;
+        else if(min<121) money=(min-60)*timemon*1.33+60*timemon;
+        else money=(min-120)*timemon*1.66+60*timemon*1.33+60*timemon;
+        printf("%.1f\n",money); 
+    }
+}
