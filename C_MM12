@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main() {
+    float dis;
+
+    // 持續讀取輸入直到 EOF
+    while (scanf("%f", &dis) != EOF) {
+        // 計算無條件進位結果
+        int result = (int)ceil((dis * 100) / 23.8);
+        printf("%d\n", result);
+    }
+
+    return 0;
+}
